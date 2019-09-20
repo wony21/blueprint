@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.madang.blueprint.domain.user.UserMapper">
+    <select id="selectCmUser" resultType="CmUser">
+        SELECT USER_ID AS "userId", USER_PS AS "userPs", USER_NM AS "userNm", EMAIL AS "email", ROLE as "role"
+        FROM CM_USER
+        WHERE USER_ID = #{userId}
+    </select>
+</mapper>
+
