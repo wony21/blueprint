@@ -22,13 +22,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Autowired
     AuthProvider authProvider;
-    
     @Autowired
     AuthFailureHandler authFailureHandler;
- 
     @Autowired
     AuthSuccessHandler authSuccessHandler;
-
 
 	@Override
 	public void configure(WebSecurity web) {
@@ -54,7 +51,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.defaultSuccessUrl("/")
 			.loginProcessingUrl("/loginProcess")
 			.failureHandler(authFailureHandler)
-			.successHandler(authSuccessHandler)
 			.usernameParameter("id")
 			.passwordParameter("password")
 		.and()
@@ -62,9 +58,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.logoutSuccessUrl("/")
 			.invalidateHttpSession(true)
 		.and()
-			.authenticationProvider(authProvider);
-		
-		http.csrf().disable();
+			.authenticationProvider(authProvider)
+			.exceptionHandling()
+		.and()
+			.csrf().disable();
 	}
 
 }
