@@ -60,7 +60,7 @@ public class AuthProvider implements AuthenticationProvider {
 		} else {
 			throw new BadCredentialsException("Bad credentials [" + id + "/" + password + "]");
 		}
-		UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(id, password, grantedAuthorityList);
+		UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(user, null, grantedAuthorityList);
 		authToken.setDetails(user);
 		return authToken;
 	}

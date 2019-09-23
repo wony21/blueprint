@@ -22,7 +22,6 @@ public class UserService {
 	UserMapper mapper;
 
 	public CmUser getUser(String userId) {
-
 		return mapper.selectCmUser(userId);
 	}
 

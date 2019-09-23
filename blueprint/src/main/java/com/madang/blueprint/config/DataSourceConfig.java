@@ -25,7 +25,7 @@ public class DataSourceConfig {
 		SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
 		sqlSessionFactoryBean.setDataSource(dataSource);
 		sqlSessionFactoryBean.setMapperLocations(applicationContext.getResources("classpath:/mappers/**/*.xml"));
-		/* auto alias set */
+		/* mybatis auto alias set */
 		sqlSessionFactoryBean.setVfs(SpringBootVFS.class);
 		sqlSessionFactoryBean.setTypeAliasesPackage("com.madang.blueprint.vo");
 		return sqlSessionFactoryBean.getObject();

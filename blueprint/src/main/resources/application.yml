@@ -13,4 +13,18 @@ spring:  mvc:    view:      prefix: /WEB-INF/views/
       maximum-pool-size: 30
       validation-timeout: 1000
       minimum-idle: 2 
-      
+
+
+# google
+google :
+  client :
+    clientId : 498159149052-c3proiqif69k99gqo7pulbtmefiopli4.apps.googleusercontent.com
+    clientSecret: sshTCX1jzWbHp4sONagPxVFj
+    accessTokenUri: https://www.googleapis.com/oauth2/v4/token
+    userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
+    clientAuthenticationScheme: form
+    scope:
+    - email
+    - profile
+  resource:
+    userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo

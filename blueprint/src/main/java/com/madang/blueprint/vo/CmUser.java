@@ -2,6 +2,8 @@ package com.madang.blueprint.vo;
 
 import org.apache.ibatis.type.Alias;
 
+import com.madang.blueprint.common.Construct;
+
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -20,5 +22,7 @@ public class CmUser {
 	private String email;
 	private String mobile;
 	private String role;
+	private Construct construct = Construct.MADANG;
+	
 
 }
