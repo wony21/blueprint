@@ -52,8 +52,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	public void configure(WebSecurity web) {
+//		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+//		registry.addResourceHandler("/images/**").addResourceLocations("/resources/images/");
+//		registry.addResourceHandler("/js/**").addResourceLocations("/resources/js/");
+//		registry.addResourceHandler("/color/**").addResourceLocations("/resources/color/");
+//		registry.addResourceHandler("/css/**").addResourceLocations("/resources/images/");
+//		registry.addResourceHandler("/contactform/**").addResourceLocations("/resources/contactform/");
+//		registry.addResourceHandler("/fonts/**").addResourceLocations("/resources/fonts/");
+//		registry.addResourceHandler("/ico/**").addResourceLocations("/resources/ico/");
+//		registry.addResourceHandler("/img/**").addResourceLocations("/resources/img/");
 		log.info("=============================== security ignore ===============================");
-		web.ignoring().antMatchers("/css/**", "/script/**", "/image/**", "/fonts/**", "/lib/**");
+		web.ignoring().antMatchers("/resources/**", "/js/**", "/color/**", "/contactform/**", "/ico/**", "/css/**", "/script/**", "/image/**", "/fonts/**", "/lib/**", "/img/**");
 	}
 
 	@Override

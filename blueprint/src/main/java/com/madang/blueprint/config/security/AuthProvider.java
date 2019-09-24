@@ -15,6 +15,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Component;
 
 import com.madang.blueprint.common.CmResponse;
+import com.madang.blueprint.common.Construct;
 import com.madang.blueprint.common.Roles;
 import com.madang.blueprint.domain.user.UserService;
 import com.madang.blueprint.vo.CmUser;
@@ -39,13 +40,10 @@ public class AuthProvider implements AuthenticationProvider {
 		String id = (String) authentication.getPrincipal();
 		String password = (String) authentication.getCredentials();
 		CmResponse response = userService.login(id, password);
-		log.info("response ok");
 		CmUser user = userService.getUser(id);
-		log.info("cm user param ok");
 		List<GrantedAuthority> grantedAuthorityList = new ArrayList<>();
 		int code = response.getCode();
-		String msg = response.getFailMessage();
-		log.info("code : {} message : {}", code, msg);
+		String failMessage = response.getFailMessage();
 		if (response.getCode() == HttpServletResponse.SC_OK) {
 			Roles role = Roles.convert(user.getRole());
 			if (role == Roles.ADMIN) {
@@ -58,10 +56,17 @@ public class AuthProvider implements AuthenticationProvider {
 				// Non-grant
 			}
 		} else {
+			log.error("Login Failed ({}) : {}", code, failMessage);
 			throw new BadCredentialsException("Bad credentials [" + id + "/" + password + "]");
 		}
-		UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(user, null, grantedAuthorityList);
-		authToken.setDetails(user);
+		IntegratedUserDetails itgUserDetails = new IntegratedUserDetails();
+		itgUserDetails.setLoginType(Construct.MADANG);
+		itgUserDetails.setId(user.getUserId());
+		itgUserDetails.setName(user.getUserNm());
+		itgUserDetails.setRole(user.getRole());
+		itgUserDetails.setCmUser(user);
+		UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(itgUserDetails, null, grantedAuthorityList);
+		authToken.setDetails(itgUserDetails);
 		return authToken;
 	}
 

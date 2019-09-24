@@ -6,10 +6,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.madang.blueprint.common.Construct;
 import com.madang.blueprint.common.SessionUtils;
+import com.madang.blueprint.config.security.IntegratedUserDetails;
 import com.madang.blueprint.config.social.google.GoogleUserDetails;
 import com.madang.blueprint.vo.CmUser;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Controller
 public class HomeController {
 
@@ -17,22 +22,31 @@ public class HomeController {
 	public String index(Model model) {
 		
 		Object userDetails = SessionUtils.getCurrentUser();
-		if ( userDetails instanceof CmUser) {
-			CmUser user = (CmUser) userDetails;
-			if ( user != null) {
-				model.addAttribute("id", user.getUserId());
-				model.addAttribute("name", user.getUserNm());
-				model.addAttribute("role", user.getRole());
-			}
-		} else if ( userDetails instanceof GoogleUserDetails) {
-			GoogleUserDetails user = (GoogleUserDetails) userDetails;
-			if ( user != null) {
-				model.addAttribute("id", user.getEmail());
-				model.addAttribute("name", user.getName());
-				model.addAttribute("role", user.getRole());
-			}
-		}
 		
+		log.info("[USERDETAILS] {}", userDetails.toString());
+		
+		if ( userDetails instanceof IntegratedUserDetails) {
+			
+			IntegratedUserDetails igtUserDetails = (IntegratedUserDetails) userDetails;
+			String userId = "";
+			String userName = "";
+			String userRole = "";
+			
+			if ( igtUserDetails.getLoginType() == Construct.MADANG ) {
+				CmUser user = igtUserDetails.getCmUser();
+				userId = user.getUserId();
+				userName = user.getUserNm();
+				userRole = user.getRole();
+			} else if ( igtUserDetails.getLoginType() == Construct.GOOGLE ) {
+				GoogleUserDetails user = igtUserDetails.getGoogleUser();
+				userId = user.getEmail();
+				userName = user.getName();
+				userRole = user.getRole();
+			}
+			model.addAttribute("id", userId);
+			model.addAttribute("name", userName);
+			model.addAttribute("role", userRole);
+		} 
 		return "index";
 	}
 	
@@ -57,6 +71,11 @@ public class HomeController {
 	@RequestMapping(value = "/googleLoginSuccess", method = { RequestMethod.GET, RequestMethod.POST })
 	public String loginGoogleComplete() {
 		return "googleLoginSuccess";
+	}
+	
+	@RequestMapping(value = "/home", method = { RequestMethod.GET } )
+	public String home() {
+		return "index";
 	}
 	
 	

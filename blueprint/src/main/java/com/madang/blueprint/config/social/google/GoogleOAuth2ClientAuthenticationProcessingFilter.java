@@ -15,7 +15,9 @@ import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.madang.blueprint.common.Construct;
 import com.madang.blueprint.common.Roles;
+import com.madang.blueprint.config.security.IntegratedUserDetails;
 import com.madang.blueprint.config.social.SocialService;
 
 import lombok.extern.slf4j.Slf4j;
@@ -34,9 +36,6 @@ public class GoogleOAuth2ClientAuthenticationProcessingFilter extends OAuth2Clie
 	@Override
 	protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, 
 			Authentication authResult) throws IOException, ServletException {
-		
-		log.info("============================ GoogleOAuth2ClientAuthenticationProcessingFilter ============================");
-
 		final OAuth2AccessToken accessToken = restTemplate.getAccessToken();
 		final OAuth2Authentication auth = (OAuth2Authentication) authResult;
 		final Object details = auth.getUserAuthentication().getDetails();
@@ -44,11 +43,15 @@ public class GoogleOAuth2ClientAuthenticationProcessingFilter extends OAuth2Clie
 		final Object name = auth.getUserAuthentication().getName();
 		final GoogleUserDetails userDetails = mapper.convertValue(details, GoogleUserDetails.class);
 		userDetails.setAccessToken(accessToken);
-		//final UserConnection userConnection = UserConnection.valueOf(userDetails);
 		log.info("google login user : " + userDetails.toString());
 		userDetails.setRole(Roles.USER.toString());
-
-		final UsernamePasswordAuthenticationToken authenticationToken = socialService.doAuthentication(userDetails);
+		IntegratedUserDetails itgUserDetails = new IntegratedUserDetails();
+		itgUserDetails.setLoginType(Construct.GOOGLE);
+		itgUserDetails.setGoogleUser(userDetails);
+		itgUserDetails.setId(userDetails.getEmail());
+		itgUserDetails.setName(userDetails.getName());
+		itgUserDetails.setRole(Roles.USER.toString());
+		final UsernamePasswordAuthenticationToken authenticationToken = socialService.doAuthentication(itgUserDetails);
 		super.successfulAuthentication(request, response, chain, authenticationToken);
 
 	}

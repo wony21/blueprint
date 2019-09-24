@@ -22,17 +22,6 @@ public class SocialService {
 	UserService userService;
 
 	public UsernamePasswordAuthenticationToken doAuthentication(Object userDetails) {
-		
-//		if (userService.getUser(userId) != null) {
-//			// 기존 회원일 경우에는 데이터베이스에서 조회해서 인증 처리
-//			final User user = userService.findBySocial(userConnection);
-//			return setAuthenticationToken(user);
-//		} else {
-//			// 새 회원일 경우 회원가입 이후 인증 처리
-//			final User user = userService.signUp(userConnection);
-//			return setAuthenticationToken(user);
-//		}
-		//CmUser user = userService.getUser(userId);
 		return setAuthenticationToken(userDetails);
 	}
 
