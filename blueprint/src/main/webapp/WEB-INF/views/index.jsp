@@ -69,7 +69,7 @@
         <div class="row nomargin">
           <div class="span4">
             <div class="logo">
-              <a href="index.html"><img src="/img/logo.png" alt="" /></a>
+              <a href="index.html"><img src="/img/madang_logo.PNG" alt="" style="width:200px; height:auto;"/></a>
             </div>
           </div>
           <div class="span8">
