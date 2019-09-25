@@ -101,6 +101,12 @@
 			<version>2.0.0.RELEASE</version>
 		</dependency>
 
+		<!-- mustache -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mustache</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>

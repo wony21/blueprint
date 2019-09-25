@@ -31,6 +31,18 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
   <link rel="shortcut icon" href="ico/favicon.png" />
+  <style type="text/css">
+  .madanglogo {
+  	position: absolute; 
+  	top:-28px;
+  }
+  @media (max-width:767px) {
+  .madanglogo {
+  		position: inherit;
+  		top: -28px;
+  	}
+  }
+  </style>
 
   <!-- =======================================================
     Theme Name: Eterna
@@ -69,7 +81,9 @@
         <div class="row nomargin">
           <div class="span4">
             <div class="logo">
-              <a href="index.html"><img src="/img/madang_logo.PNG" alt="" style="width:200px; height:auto;"/></a>
+              <div class="madanglogo">
+              	<a href="index.html"><img src="/img/madang_logo.PNG" alt="" style="width:180px; height:auto;" /></a>
+              </div>
             </div>
           </div>
           <div class="span8">
