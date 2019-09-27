@@ -7,7 +7,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Eterna - Professional bootstrap site template for corporate business</title>
+  <title>Professional bootstrap site template for corporate business</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Your page description here" />
   <meta name="author" content="" />
@@ -165,31 +165,23 @@
       <!-- slideshow start here -->
 
       <div class="camera_wrap" id="camera-slide">
-
-        <!-- slide 1 here -->
-        <div data-src="/img/slides/camera/slide1/img1.jpg">
+      
+		<!-- 설계마당 메인 홍보 -->
+        <div data-src="/img/slides/camera/slide2/img1.jpg">
           <div class="camera_caption fadeFromLeft">
             <div class="container">
               <div class="row">
-                <div class="span6">
-                  <h2 class="animated fadeInDown"><strong>Great template for <span class="colored">multi usage</span></strong></h2>
-                  <p class="animated fadeInUp"> Vim porro dicam reprehendunt te, populo quodsi dissentiet cum ad. Ne natum deseruisse vis. Iisque deseruisse sententiae mel ne, dolores appetere vim ut. Sea no tamquam reprimique.</p>
-                  <a href="#" class="btn btn-success btn-large animated fadeInUp">
-											<i class="icon-link"></i> Read more
-										</a>
-                  <a href="#" class="btn btn-theme btn-large animated fadeInUp">
-											<i class="icon-download"></i> Download
-										</a>
-                </div>
-                <div class="span6">
-                  <img src="/img/slides/camera/slide1/screen.png" alt="" class="animated bounceInDown delay1" />
+                <div class="span12 aligncenter">
+                  <h2 class="animated fadeInDown"><strong>시공/설계 모든 것! <span class="colored">설계마당</span></strong></h2>
+                  <p class="animated fadeInUp"> 설계마당은  건축주 자신의 공간이나 대지에 맞는 설계초안을 받기 어려운 현실을 반영하여 효율적인 비용으로 업체를 선정 할 수 있도록 도와 드립니다.<p>
+                  <!-- <img src="/img/slides/camera/slide3/browsers.png" alt="" class="animated bounceInDown delay1" /> -->
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- slide 2 here -->
+      
+      <!-- 건축주 홍보 -->
         <div data-src="/img/slides/camera/slide2/img1.jpg">
           <div class="camera_caption fadeFromLeft">
             <div class="container">
@@ -198,36 +190,42 @@
                   <img src="/img/slides/camera/slide2/iMac.png" alt="" />
                 </div>
                 <div class="span6">
-                  <h2 class="animated fadeInDown"><strong>Put your <span class="colored">Opt in form</span></strong></h2>
-                  <p class="animated fadeInUp"> Vim porro dicam reprehendunt te, populo quodsi dissentiet cum ad. Ne natum deseruisse vis. Iisque deseruisse sententiae mel ne, dolores appetere vim ut. Sea no tamquam reprimique.</p>
+                  <h2 class="animated fadeInDown"><strong><span class="colored"> 원하는 설계</span>가 없으세요?</strong></h2>
+                  <p class="animated fadeInUp"> 건축주와 설계자와의 소통을 할 수 있도록 공모전을 개최 할 수 있도록 지원 합니다.<p>
+                  <p class="animated fadeInUp"> 
                   <form>
-                    <div class="input-append">
+                    <!-- <div class="input-append">
                       <input class="span3 input-large" type="text">
                       <button class="btn btn-theme btn-large" type="submit">Subscribe</button>
-                    </div>
+                    </div> -->
+                     <a href="#" class="btn btn-success btn-large animated fadeInUp"><i class="icon-link"></i> 공모전 개최하기</a>
                   </form>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
-
-        <!-- slide 3 here -->
-        <div data-src="/img/slides/camera/slide2/img1.jpg">
+      
+        <!-- 설계자 홍보 -->
+        <div data-src="/img/slides/camera/slide1/img1.jpg">
           <div class="camera_caption fadeFromLeft">
             <div class="container">
               <div class="row">
-                <div class="span12 aligncenter">
-                  <h2 class="animated fadeInDown"><strong><span class="colored">Responsive</span> and <span class="colored">cross broswer</span> compatibility</strong></h2>
-                  <p class="animated fadeInUp">Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
-                  <img src="/img/slides/camera/slide3/browsers.png" alt="" class="animated bounceInDown delay1" />
+                <div class="span6">
+                   <h2 class="animated fadeInDown"><strong>설계자님! 이제는<span class="colored"></span> <span class="colored">설계마당</span> 입니다.</strong></h2>
+                  <p class="animated fadeInUp">설계마당은 건축주와 다이렉트로 설계/시공을 진행 할 수 있는 환경을 조성합니다.</p>
+                  <!-- <a href="#" class="btn btn-success btn-large animated fadeInUp">
+											<i class="icon-link"></i> Read more
+										</a> -->
+                  <a href="#" class="btn btn-theme btn-large animated fadeInUp"><i class="icon-download"></i> 진행 중인 공모전보기</a>
+                </div>
+                <div class="span6">
+                  <img src="/img/slides/camera/slide1/screen.png" alt="" class="animated bounceInDown delay1" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
 
       <!-- slideshow end here -->
@@ -237,6 +235,30 @@
 
     <section id="content">
       <div class="container">
+      <!-- 
+      	<div class="row">
+      		<ul class="pager">
+			  <li class="previous">
+			    <a href="#">&larr;</a>
+			  </li>
+			  <li>
+				<ul class="thumbnails">
+				  <li class="span4">
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/300x200" alt="">
+				    </a>
+				  </li>
+				</ul>
+				</li>
+			  <li>Slide2</li>
+			  <li>Slide3</li>
+			  <li>Slide4</li>
+			  <li class="next">
+			    <a href="#">&rarr;</a>
+			  </li>
+			</ul>
+      	</div> -->
+      	
 
 
         <div class="row">
@@ -252,7 +274,7 @@
                     <p>
                       Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
                     </p>
-                    <a href="#">Learn More</a>
+                    <!-- <a href="#">Learn More</a> -->
                   </div>
                 </div>
               </div>
@@ -267,7 +289,7 @@
                     <p>
                       Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
                     </p>
-                    <a href="#">Learn More</a>
+                    <!-- <a href="#">Learn More</a> -->
                   </div>
                 </div>
               </div>
@@ -281,7 +303,7 @@
                     <p>
                       Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
                     </p>
-                    <a href="#">Learn More</a>
+                    <!-- <a href="#">Learn More</a> -->
                   </div>
                 </div>
               </div>
@@ -296,25 +318,25 @@
           </div>
         </div>
 
+		<!-- 선정된 우수작품  -->
         <div class="row">
+        	<p align="right"><a href="#" class="btn btn-inverse btn-rounded"><i class="icon-expand-alt icon-white"></i> more</a></p>
           <div class="span12">
             <div class="row">
+				
               <div class="span12">
                 <div class="aligncenter">
-                  <h3>Our <strong>Pricing</strong></h3>
-                  <p>Lorem ipsum dolor sit amet, labores dolorum scriptorem eum an, te quodsi sanctus neglegentur.
-                  </p>
+                  <h3> 선정된 <strong>우수작품</strong></h3>
                 </div>
               </div>
             </div>
-
 
             <div class="row">
 
               <div class="span3">
                 <div class="pricing-box-wrap animated-fast flyIn">
                   <div class="pricing-heading">
-                    <h3>Very <strong>Basic</strong></h3>
+                    <h3><strong>작품#1</strong></h3>
                   </div>
                   <div class="pricing-terms">
                     <h6>&#36;15.00 / Month</h6>
@@ -329,7 +351,7 @@
                     </ul>
                   </div>
                   <div class="pricing-action">
-                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> Sign Up</a>
+                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> 보러가기</a>
                   </div>
                 </div>
               </div>
@@ -337,7 +359,7 @@
               <div class="span3">
                 <div class="pricing-box-wrap animated-fast flyIn">
                   <div class="pricing-heading">
-                    <h3>Simple <strong>Choice</strong></h3>
+                    <h3><strong>작품#2</strong></h3>
                   </div>
                   <div class="pricing-terms">
                     <h6>&#36;20.00 / Month</h6>
@@ -352,7 +374,7 @@
                     </ul>
                   </div>
                   <div class="pricing-action">
-                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> Sign Up</a>
+                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> 보러가기</a>
                   </div>
                 </div>
               </div>
@@ -360,10 +382,10 @@
               <div class="span3">
                 <div class="pricing-box-wrap special animated-slow flyIn">
                   <div class="pricing-heading">
-                    <h3>Special <strong>Choice</strong></h3>
+                    <h3><strong>작품#3</strong></h3>
                   </div>
                   <div class="pricing-terms">
-                    <h6>&#36;15.00 / Month</h6>
+                    <h6>&#36;15.00 / Month / <i class=""></i> Special</h6>
                   </div>
                   <div class="pricing-content">
                     <ul>
@@ -375,7 +397,7 @@
                     </ul>
                   </div>
                   <div class="pricing-action">
-                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> Sign Up</a>
+                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> 보러가기</a>
                   </div>
                 </div>
               </div>
@@ -383,7 +405,7 @@
               <div class="span3">
                 <div class="pricing-box-wrap animated flyIn">
                   <div class="pricing-heading">
-                    <h3>Just <strong>Happy</strong></h3>
+                    <h3><strong>작품#4</strong></h3>
                   </div>
                   <div class="pricing-terms">
                     <h6>&#36;15.00 / Month</h6>
@@ -398,24 +420,139 @@
                     </ul>
                   </div>
                   <div class="pricing-action">
-                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> Sign Up</a>
+                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> 보러가기</a>
                   </div>
                 </div>
               </div>
             </div>
 
           </div>
-
-
+		</div>
+        
+        <!-- 진행 중인 공모전(최신순)  -->
+		<!-- <div class="row">
+          <div class="span12">
+            <div class="solidline"></div>
+          </div>
         </div>
 
-
-
         <div class="row">
-          <div class="span12 aligncenter">
-            <h3 class="title">What people <strong>saying</strong> about us</h3>
-            <div class="blankline30"></div>
+          <div class="span12">
+            <div class="row">
+              <div class="span12">
+              	<p align="right"><a href="#" class="btn btn-inverse btn-rounded"><i class="icon-expand-alt icon-white"></i> more</a></p>
+                <div class="aligncenter">
+                  <h3> 진행 중인 <strong>공모전</strong></h3>
+                </div>
+              </div>
+            </div>
 
+            <div class="row">
+
+              <div class="span3">
+                <div class="pricing-box-wrap animated-fast flyIn">
+                  <div class="pricing-heading">
+                    <h3><strong>작품#1</strong></h3>
+                  </div>
+                  <div class="pricing-terms">
+                    <h6>&#36;15.00 / Month</h6>
+                  </div>
+                  <div class="pricing-content">
+                    <ul>
+                      <li><i class="icon-ok"></i> 100 applications</li>
+                      <li><i class="icon-ok"></i> 24x7 support available</li>
+                      <li><i class="icon-ok"></i> No hidden fees</li>
+                      <li><i class="icon-ok"></i> Free 30-days trial</li>
+                      <li><i class="icon-ok"></i> Stop anytime easily</li>
+                    </ul>
+                  </div>
+                  <div class="pricing-action">
+                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> 보러가기</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="span3">
+                <div class="pricing-box-wrap animated-fast flyIn">
+                  <div class="pricing-heading">
+                    <h3><strong>작품#2</strong></h3>
+                  </div>
+                  <div class="pricing-terms">
+                    <h6>&#36;20.00 / Month</h6>
+                  </div>
+                  <div class="pricing-content">
+                    <ul>
+                      <li><i class="icon-ok"></i> 100 applications</li>
+                      <li><i class="icon-ok"></i> 24x7 support available</li>
+                      <li><i class="icon-ok"></i> No hidden fees</li>
+                      <li><i class="icon-ok"></i> Free 30-days trial</li>
+                      <li><i class="icon-ok"></i> Stop anytime easily</li>
+                    </ul>
+                  </div>
+                  <div class="pricing-action">
+                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> 보러가기</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="span3">
+                <div class="pricing-box-wrap special animated-slow flyIn">
+                  <div class="pricing-heading">
+                    <h3><strong>작품#3</strong></h3>
+                  </div>
+                  <div class="pricing-terms">
+                    <h6>&#36;15.00 / Month / <i class=""></i> Special</h6>
+                  </div>
+                  <div class="pricing-content">
+                    <ul>
+                      <li><i class="icon-ok"></i> 100 applications</li>
+                      <li><i class="icon-ok"></i> 24x7 support available</li>
+                      <li><i class="icon-ok"></i> No hidden fees</li>
+                      <li><i class="icon-ok"></i> Free 30-days trial</li>
+                      <li><i class="icon-ok"></i> Stop anytime easily</li>
+                    </ul>
+                  </div>
+                  <div class="pricing-action">
+                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> 보러가기</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="span3">
+                <div class="pricing-box-wrap animated flyIn">
+                  <div class="pricing-heading">
+                    <h3><strong>작품#4</strong></h3>
+                  </div>
+                  <div class="pricing-terms">
+                    <h6>&#36;15.00 / Month</h6>
+                  </div>
+                  <div class="pricing-content">
+                    <ul>
+                      <li><i class="icon-ok"></i> 100 applications</li>
+                      <li><i class="icon-ok"></i> 24x7 support available</li>
+                      <li><i class="icon-ok"></i> No hidden fees</li>
+                      <li><i class="icon-ok"></i> Free 30-days trial</li>
+                      <li><i class="icon-ok"></i> Stop anytime easily</li>
+                    </ul>
+                  </div>
+                  <div class="pricing-action">
+                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> 보러가기</a>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+
+          </div>
+		</div> -->
+
+		<!-- people saying -->
+        <div class="row">
+        	<p align="right"><a href="#" class="btn btn-inverse btn-rounded"><i class="icon-expand-alt icon-white"></i> more</a></p>
+          <div class="span12 aligncenter">
+            <h3 class="title">진행 중인 <strong>공모전</strong> </h3>
+            <div class="blankline30"></div>
             <ul class="bxslider">
               <li>
                 <blockquote>
@@ -474,7 +611,7 @@
       <div class="container">
         <div class="row">
           <div class="span12">
-            <h4 class="title">Recent <strong>Works</strong></h4>
+            <h4 class="title">시공 <strong>사례</strong></h4>
             <div class="row">
 
               <div class="grid cs-style-4">
@@ -559,25 +696,23 @@
         <div class="row">
           <div class="span4">
             <div class="widget">
-              <h5 class="widgetheading">Browse pages</h5>
+              <h5 class="widgetheading">Contents</h5>
               <ul class="link-list">
-                <li><a href="#">Our company</a></li>
-                <li><a href="#">Terms and conditions</a></li>
-                <li><a href="#">Privacy policy</a></li>
-                <li><a href="#">Press release</a></li>
-                <li><a href="#">What we have done</a></li>
-                <li><a href="#">Our support forum</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">진행 중인 공모전</a></li>
+                <li><a href="#">우수작 전시회</a></li>
+                <li><a href="#">시공사례</a></li>
               </ul>
 
             </div>
           </div>
           <div class="span4">
             <div class="widget">
-              <h5 class="widgetheading">Get in touch</h5>
+              <h5 class="widgetheading">Company</h5>
               <address>
-							<strong>Eterna company Inc.</strong><br>
-							Somestreet 200 VW, Suite Village A.001<br>
-							Jakarta 13426 Indonesia
+							<strong>설계마당 company Inc.</strong><br>
+							경기도 수원시 희국이네<br>
+							<i class="icon-envelope"></i> 437826
 						</address>
               <p>
                 <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
@@ -587,16 +722,16 @@
           </div>
           <div class="span4">
             <div class="widget">
-              <h5 class="widgetheading">Subscribe newsletter</h5>
+              <h5 class="widgetheading">Promiss</h5>
               <p>
-                Keep updated for new releases and freebies. Enter your e-mail and subscribe to our newsletter.
+              	설계마당은 건축주와 설계자에게 정직하고 올바른 환경을 조성 할 것을 약속 드립니다.
               </p>
-              <form class="subscribe">
+              <!-- <form class="subscribe">
                 <div class="input-append">
                   <input class="span2" id="appendedInputButton" type="text">
                   <button class="btn btn-theme" type="submit">Subscribe</button>
                 </div>
-              </form>
+              </form> -->
             </div>
           </div>
         </div>
@@ -606,7 +741,7 @@
           <div class="row">
             <div class="span6">
               <div class="copyright">
-                <p><span>&copy; Eterna company. All right reserved</span></p>
+                <p><span>&copy; 설계마당 company. All right reserved</span></p>
               </div>
 
             </div>
@@ -619,7 +754,7 @@
                   Licensing information: https://bootstrapmade.com/license/
                   Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Eterna
                 -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
               </div>
             </div>
           </div>
