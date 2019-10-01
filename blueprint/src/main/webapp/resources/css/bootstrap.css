@@ -711,6 +711,16 @@ a.text-info:focus {
   color: #2d6987;
 }
 
+/* 20191001 text-white 최재원 추가  */
+.text-white {
+  color: #FFFFFF;
+}
+
+a.text-white:hover,
+a.text-white:focus {
+  color: #2d6987;
+}
+
 .text-success {
   color: #468847;
 }

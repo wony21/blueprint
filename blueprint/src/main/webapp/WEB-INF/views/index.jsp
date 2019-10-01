@@ -34,12 +34,12 @@
   <style type="text/css">
   .madanglogo {
   	position: absolute; 
-  	top:-28px;
+  	top:-15px;
   }
   @media (max-width:767px) {
   .madanglogo {
   		position: inherit;
-  		top: -28px;
+  		top: -15px;
   	}
   }
   </style>
@@ -55,7 +55,6 @@
 <body>
 
   <div id="wrapper">
-
     <!-- start header -->
     <header>
       <div class="top">
@@ -82,7 +81,7 @@
           <div class="span4">
             <div class="logo">
               <div class="madanglogo">
-              	<a href="index.html"><img src="/img/madang_logo.PNG" alt="" style="width:180px; height:auto;" /></a>
+              	<a href="index.html"><img src="/img/myplan_logo.png" alt="" style="width:215px; height:auto;" /></a>
               </div>
             </div>
           </div>
@@ -158,7 +157,7 @@
       </div>
     </header>
     <!-- end header -->
-
+	
     <!-- section featured -->
     <section id="featured">
 
@@ -167,13 +166,13 @@
       <div class="camera_wrap" id="camera-slide">
       
 		<!-- 설계마당 메인 홍보 -->
-        <div data-src="/img/slides/camera/slide2/img1.jpg">
+        <div data-src="/img/slides/main/header.jpg">
           <div class="camera_caption fadeFromLeft">
             <div class="container">
               <div class="row">
                 <div class="span12 aligncenter">
-                  <h2 class="animated fadeInDown"><strong>시공/설계 모든 것! <span class="colored">설계마당</span></strong></h2>
-                  <p class="animated fadeInUp"> 설계마당은  건축주 자신의 공간이나 대지에 맞는 설계초안을 받기 어려운 현실을 반영하여 효율적인 비용으로 업체를 선정 할 수 있도록 도와 드립니다.<p>
+                  <h2 class="animated fadeInDown"><strong><span class="colored">나에게 맞는 설계</span>를 비교해보고 결정하자!</strong></h2>
+                  <h1 class="animated fadeInUp"><i><strong>설계 비교/검토를 한 번에</strong></i><img src="/img/myplan_logo.png" alt="" style="width:430px; height:auto;" /></h1>
                   <!-- <img src="/img/slides/camera/slide3/browsers.png" alt="" class="animated bounceInDown delay1" /> -->
                 </div>
               </div>
@@ -182,16 +181,19 @@
         </div>
       
       <!-- 건축주 홍보 -->
-        <div data-src="/img/slides/camera/slide2/img1.jpg">
+        <div data-src="/img/slides/main/building.jpg">
           <div class="camera_caption fadeFromLeft">
             <div class="container">
               <div class="row">
                 <div class="span6">
-                  <img src="/img/slides/camera/slide2/iMac.png" alt="" />
+                  <img src="/img/slides/main/slide2/iMac.png" alt="" />
                 </div>
-                <div class="span6">
-                  <h2 class="animated fadeInDown"><strong><span class="colored"> 원하는 설계</span>가 없으세요?</strong></h2>
-                  <p class="animated fadeInUp"> 건축주와 설계자와의 소통을 할 수 있도록 공모전을 개최 할 수 있도록 지원 합니다.<p>
+                <div class="span6">                	
+                  <h2 class="animated fadeInDown text-white"> 나만을 위한 <strong><span class="colored">설계공모전</span></strong></h2>
+                  <p class="animated fadeInUp text-white"> 마이플랜은 건축주가 필요로 하는 공간에 대한 설계를 비교해 볼 수 있도록 지원합니다.<br />
+												건축주가 원하는 내용을 작성하여 공모전을 개설하기만 하면 됩니다.<br />
+												우수한 시공회사에서 나만을 위한 설계를 제공합니다.<br />
+												건축주는 각 설계안과 화사소개를 확인하고 직접 상담해 본 후 업체를 선정하세요.<p>
                   <p class="animated fadeInUp"> 
                   <form>
                     <!-- <div class="input-append">
@@ -207,21 +209,35 @@
         </div>
       
         <!-- 설계자 홍보 -->
-        <div data-src="/img/slides/camera/slide1/img1.jpg">
+        <div id="slide3" data-src="/img/slides/main/plant01.jpg">
           <div class="camera_caption fadeFromLeft">
             <div class="container">
               <div class="row">
                 <div class="span6">
-                   <h2 class="animated fadeInDown"><strong>설계자님! 이제는<span class="colored"></span> <span class="colored">설계마당</span> 입니다.</strong></h2>
+                  <!-- <h2 class="animated fadeInDown"><strong>설계자님! 이제는<span class="colored"></span> <span class="colored">설계마당</span> 입니다.</strong></h2>
                   <p class="animated fadeInUp">설계마당은 건축주와 다이렉트로 설계/시공을 진행 할 수 있는 환경을 조성합니다.</p>
-                  <!-- <a href="#" class="btn btn-success btn-large animated fadeInUp">
+                  <a href="#" class="btn btn-success btn-large animated fadeInUp">
 											<i class="icon-link"></i> Read more
-										</a> -->
-                  <a href="#" class="btn btn-theme btn-large animated fadeInUp"><i class="icon-download"></i> 진행 중인 공모전보기</a>
+										</a>
+                  <a href="#" class="btn btn-theme btn-large animated fadeInUp"><i class="icon-download"></i> 진행 중인 공모전보기</a> -->
+                  <h2 class="animated fadeInDown text-white"><strong>" 될성부른 나무는 떡잎부터 알아본다. "</strong></h2>
+				  <p class="animated fadeInUp text-white">
+					떡잎을 보면  이 나무가 커서 튼튼한 뿌리와 무성한 잎, 탐스러운 열매가 자랄 수 있지를 알 수 있기  때문입니다.
+					건축에 있어서 떡잎에 해당하는 작업이 무엇일까요?
+					그건 바로 설계입니다.
+
+					설계도 안에는 이 건물의 튼튼한 기초를 어떻게 만들어야 하는지, 골조는 어떻게 시공해야 하는지,
+					외관과 인테리어는 어떻게 꾸며야 하는지가 모두 표현되어 있습니다. 그 건물의 DNA를 가지고 있는 것이죠.
+					설계는 건축에 있어서 그만큼 중요합니다.
+
+					설계안을 보면 회사의 이념을 알 수 있습니다.
+
+					마이플랜에서 각 회사에서 만든 나만의 설계를 만나보세요.
+				  </p>
                 </div>
-                <div class="span6">
+                <!-- <div class="span6">
                   <img src="/img/slides/camera/slide1/screen.png" alt="" class="animated bounceInDown delay1" />
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
