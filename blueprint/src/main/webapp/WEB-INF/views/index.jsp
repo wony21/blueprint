@@ -327,6 +327,29 @@
             </div>
           </div>
         </div>
+        
+		<div class="row">
+		  <div class="span12">
+            <div class="solidline"></div>
+          </div>
+        </div>
+        <!-- 공모전 개최하기, 공모전 참여하기  -->
+        <div class="row">
+        	<div class="span6">
+        		<img src="/img/go_plan.jpg" />
+        		<p class="text-info">나만을 위한 설계 공모전 개최하기</p>
+        		<h4><strong><a href="#">공모전 개최하기(예비 건축주용)</a></strong></h4>
+        		<!-- <a href="#" class="btn btn-success btn-large animated fadeInUp"><i class="icon-link"></i> 공모전 개최하기(예비 건축주용)</a> -->
+        		<p>간단한 서식 작성으로 나만을 위한 설계공모전을 개최해보세요.<br>참가작품을 확인하고, 원하는 업체에 직접 상담문의를 할 수 있습니다.</p>
+        	</div>
+        	<div class="span6">
+        		<img src="/img/join_plan.jpg" />
+        		<p class="text-info">차별화된 설계작품으로 공모전 참가하기</p>
+        		<h4><strong><a href="#">공모전 참가하기(설계자용)</a></strong></h4>
+        		<!-- <a href="#" class="btn btn-theme btn-large animated fadeInUp"><i class="icon-download"></i> 공모전 참기하기(설계자용)</a> -->
+        		<p>차별회된 설계작품으로 건축주의 선택을 받아보세요.<br>건축주의 검토를 거쳐 건축주가 직접 건축상담을 신청합니다.</p>
+        	</div>	
+        </div>
 
         <div class="row">
           <div class="span12">
