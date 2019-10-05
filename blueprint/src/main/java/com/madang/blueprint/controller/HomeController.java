@@ -55,10 +55,10 @@ public class HomeController {
 		return "login";
 	}
 	
-	@RequestMapping(value = "/login/google", method = { RequestMethod.GET, RequestMethod.POST })
-	public String loginGoogle() {
-		return "login";
-	}
+	/*
+	 * @RequestMapping(value = "/login/google", method = { RequestMethod.GET,
+	 * RequestMethod.POST }) public String loginGoogle() { return "login"; }
+	 */
 	
 	
 	@RequestMapping(value = "/error", method = RequestMethod.GET)

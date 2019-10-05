@@ -53,6 +53,7 @@ public class GoogleOAuth2ClientAuthenticationProcessingFilter extends OAuth2Clie
 		itgUserDetails.setRole(Roles.USER.toString());
 		final UsernamePasswordAuthenticationToken authenticationToken = socialService.doAuthentication(itgUserDetails);
 		super.successfulAuthentication(request, response, chain, authenticationToken);
+		response.sendRedirect("/");
 
 	}
 
