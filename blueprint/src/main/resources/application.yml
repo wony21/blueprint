@@ -1,5 +1,5 @@
 # server port
-server:  port: 8080
+server:  port: 9090
 
 # mvc
 spring:  mvc:    view:      prefix: /WEB-INF/views/

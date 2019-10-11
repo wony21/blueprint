@@ -61,7 +61,7 @@
     <!-- Login Form -->
     <form id="login-form" name="login-form" method="post" action="/loginProcess">
       <input type="text" id="login" class="fadeIn second" name="id" placeholder="아이디를 입력하세요">
-      <input type="text" id="password" class="fadeIn third" name="password" placeholder="비밀번호를 입력하세요">
+      <input type="text" id="password" class="fadeIn first" name="password" placeholder="비밀번호를 입력하세요">
       <br>
       <input type="submit" class="fadeIn fourth" value="로그인">
     </form>

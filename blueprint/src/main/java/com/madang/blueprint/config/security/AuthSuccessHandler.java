@@ -20,6 +20,7 @@ public class AuthSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
             Authentication authentication) throws ServletException, IOException {
 		log.info("======================== success handler ==========================");
+		//super.onAuthenticationSuccess(request, response, authentication);
 		response.sendRedirect("/");
     }
 

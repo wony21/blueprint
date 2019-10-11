@@ -20,24 +20,24 @@ public class HomeController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index(Model model) {
-		
+
 		Object userDetails = SessionUtils.getCurrentUser();
-		
+
 		log.info("[USERDETAILS] {}", userDetails.toString());
-		
-		if ( userDetails instanceof IntegratedUserDetails) {
-			
+
+		if (userDetails instanceof IntegratedUserDetails) {
+
 			IntegratedUserDetails igtUserDetails = (IntegratedUserDetails) userDetails;
 			String userId = "";
 			String userName = "";
 			String userRole = "";
-			
-			if ( igtUserDetails.getLoginType() == Construct.MADANG ) {
+
+			if (igtUserDetails.getLoginType() == Construct.MADANG) {
 				CmUser user = igtUserDetails.getCmUser();
 				userId = user.getUserId();
 				userName = user.getUserNm();
 				userRole = user.getRole();
-			} else if ( igtUserDetails.getLoginType() == Construct.GOOGLE ) {
+			} else if (igtUserDetails.getLoginType() == Construct.GOOGLE) {
 				GoogleUserDetails user = igtUserDetails.getGoogleUser();
 				userId = user.getEmail();
 				userName = user.getName();
@@ -46,40 +46,26 @@ public class HomeController {
 			model.addAttribute("id", userId);
 			model.addAttribute("name", userName);
 			model.addAttribute("role", userRole);
-		} 
+		}
 		return "index";
 	}
-	
+
 	@RequestMapping(value = "/login", method = { RequestMethod.GET, RequestMethod.POST })
 	public String login() {
+		log.info("//////////////////////////////////////// google login22 ////////////////////////////////////////");
 		return "login";
 	}
 	
-	/*
-	 * @RequestMapping(value = "/login/google", method = { RequestMethod.GET,
-	 * RequestMethod.POST }) public String loginGoogle() { return "login"; }
-	 */
-	
-	
+//	@RequestMapping(value = "/login/google")
+//	public String loginGoogle() {
+//		log.info("//////////////////////////////////////// google login ////////////////////////////////////////");
+//		return "index";
+//	}
+	 
 	@RequestMapping(value = "/error", method = RequestMethod.GET)
-	public String error(Model model,
-			@RequestParam String error) {
+	public String error(Model model, @RequestParam String error) {
 		model.addAttribute("error", error);
 		return "error";
 	}
-	
-	@RequestMapping(value = "/googleLoginSuccess", method = { RequestMethod.GET, RequestMethod.POST })
-	public String loginGoogleComplete() {
-		return "googleLoginSuccess";
-	}
-	
-	@RequestMapping(value = "/home", method = { RequestMethod.GET } )
-	public String home() {
-		return "index";
-	}
-	
-	
-	
-	
 
 }

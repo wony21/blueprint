@@ -13,20 +13,25 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.oauth2.client.filter.OAuth2ClientAuthenticationProcessingFilter;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
+import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.madang.blueprint.common.Construct;
 import com.madang.blueprint.common.Roles;
+import com.madang.blueprint.config.security.AuthSuccessHandler;
 import com.madang.blueprint.config.security.IntegratedUserDetails;
 import com.madang.blueprint.config.social.SocialService;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@Component
 public class GoogleOAuth2ClientAuthenticationProcessingFilter extends OAuth2ClientAuthenticationProcessingFilter {
 	private ObjectMapper mapper = new ObjectMapper();
 	@Autowired
 	SocialService socialService;
+	@Autowired
+	AuthSuccessHandler authSuccessHandler;
 
 	public GoogleOAuth2ClientAuthenticationProcessingFilter(SocialService socialService) {
 		super("/login/google");
@@ -36,6 +41,7 @@ public class GoogleOAuth2ClientAuthenticationProcessingFilter extends OAuth2Clie
 	@Override
 	protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, 
 			Authentication authResult) throws IOException, ServletException {
+		log.info("============================================ successfulAuthentication ============================================");
 		final OAuth2AccessToken accessToken = restTemplate.getAccessToken();
 		final OAuth2Authentication auth = (OAuth2Authentication) authResult;
 		final Object details = auth.getUserAuthentication().getDetails();
@@ -52,9 +58,16 @@ public class GoogleOAuth2ClientAuthenticationProcessingFilter extends OAuth2Clie
 		itgUserDetails.setName(userDetails.getName());
 		itgUserDetails.setRole(Roles.USER.toString());
 		final UsernamePasswordAuthenticationToken authenticationToken = socialService.doAuthentication(itgUserDetails);
+		if ( this.authSuccessHandler == null ) {
+			log.error("authentication handler is null.");
+			log.error("authentication handler is null.");
+			log.error("authentication handler is null.");
+			log.error("authentication handler is null.");
+		}
+		this.setAuthenticationSuccessHandler(authSuccessHandler);
+		authSuccessHandler.setDefaultTargetUrl("/");
+		authSuccessHandler.onAuthenticationSuccess(request, response, authenticationToken);
 		super.successfulAuthentication(request, response, chain, authenticationToken);
-		response.sendRedirect("/");
-
 	}
 
 }

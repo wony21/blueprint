@@ -63,15 +63,16 @@
             <div class="span6">
               <p class="topcontact"><i class="icon-coffee"></i> ${name}(${id})님 환영 합니다.</p>
             </div>
-            <div class="span6">
-              <ul class="social-network">
-                <!-- <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-white"></i></a></li> -->
-                <!-- <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-white"></i></a></li>
+            <div class="span6" style="text-align: right;">
+            	<p class="topcontact"><i class="icon-signout"></i><a href="/logout" style="color: #ddd;">Logout</a></p>
+            <!--   <ul class="social-network">
+                <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-white"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-white"></i></a></li>
                 <li><a href="#" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-white"></i></a></li>
-                <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-pinterest  icon-white"></i></a></li> -->
+                <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-pinterest  icon-white"></i></a></li>
                 <li><a href="/login/google" data-placement="bottom" title="Google +"><i class="icon-google-plus icon-white"></i></a></li>
-                <!-- <li><a href="#" data-placement="bottom" title="Dribbble"><i class="icon-dribbble icon-white"></i></a></li> -->
-              </ul>
+                <li><a href="#" data-placement="bottom" title="Dribbble"><i class="icon-dribbble icon-white"></i></a></li>
+              </ul> -->
             </div>
           </div>
         </div>
