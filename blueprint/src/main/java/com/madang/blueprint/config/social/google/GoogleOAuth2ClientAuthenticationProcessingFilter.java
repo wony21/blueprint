@@ -25,12 +25,11 @@ import com.madang.blueprint.config.social.SocialService;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@Component
 public class GoogleOAuth2ClientAuthenticationProcessingFilter extends OAuth2ClientAuthenticationProcessingFilter {
 	private ObjectMapper mapper = new ObjectMapper();
 	@Autowired
 	SocialService socialService;
-	@Autowired
+	
 	AuthSuccessHandler authSuccessHandler;
 
 	public GoogleOAuth2ClientAuthenticationProcessingFilter(SocialService socialService) {
@@ -58,15 +57,17 @@ public class GoogleOAuth2ClientAuthenticationProcessingFilter extends OAuth2Clie
 		itgUserDetails.setName(userDetails.getName());
 		itgUserDetails.setRole(Roles.USER.toString());
 		final UsernamePasswordAuthenticationToken authenticationToken = socialService.doAuthentication(itgUserDetails);
-		if ( this.authSuccessHandler == null ) {
-			log.error("authentication handler is null.");
-			log.error("authentication handler is null.");
-			log.error("authentication handler is null.");
-			log.error("authentication handler is null.");
-		}
+//		if ( this.authSuccessHandler == null ) {
+//			log.error("authentication handler is null.");
+//			log.error("authentication handler is null.");
+//			log.error("authentication handler is null.");
+//			log.error("authentication handler is null.");
+//		}
+//		this.setAuthenticationSuccessHandler(authSuccessHandler);
+//		authSuccessHandler.setDefaultTargetUrl("/");
+//		authSuccessHandler.onAuthenticationSuccess(request, response, authenticationToken);
+		authSuccessHandler = new AuthSuccessHandler();
 		this.setAuthenticationSuccessHandler(authSuccessHandler);
-		authSuccessHandler.setDefaultTargetUrl("/");
-		authSuccessHandler.onAuthenticationSuccess(request, response, authenticationToken);
 		super.successfulAuthentication(request, response, chain, authenticationToken);
 	}
 

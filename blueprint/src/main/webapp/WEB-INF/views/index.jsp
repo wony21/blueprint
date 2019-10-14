@@ -14,6 +14,9 @@
 
   <!-- css -->
   <link href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap&subset=korean" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900|Noto+Serif+KR&display=swap&subset=korean" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet" />
   <link href="css/bootstrap-responsive.css" rel="stylesheet" />
   <link href="css/flexslider.css" rel="stylesheet" />
@@ -181,7 +184,7 @@
           </div>
         </div>
       
-      <!-- 건축주 홍보 -->
+      	<!-- 건축주 홍보 -->
         <div data-src="/img/slides/main/building.jpg">
           <div class="camera_caption fadeFromLeft">
             <div class="container">
@@ -243,11 +246,12 @@
             </div>
           </div>
         </div>
+
       </div>
 
       <!-- slideshow end here -->
 
-    </section>
+    </section> 
     <!-- /section featured -->
 
     <section id="content">
@@ -275,10 +279,8 @@
 			  </li>
 			</ul>
       	</div> -->
-      	
 
-
-        <div class="row">
+        <!-- <div class="row">
           <div class="span12">
             <div class="row">
               <div class="span4">
@@ -291,7 +293,7 @@
                     <p>
                       Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
                     </p>
-                    <!-- <a href="#">Learn More</a> -->
+                    <a href="#">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -306,7 +308,7 @@
                     <p>
                       Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
                     </p>
-                    <!-- <a href="#">Learn More</a> -->
+                    <a href="#">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -320,7 +322,7 @@
                     <p>
                       Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
                     </p>
-                    <!-- <a href="#">Learn More</a> -->
+                    <a href="#">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -333,7 +335,7 @@
 		  <div class="span12">
             <div class="solidline"></div>
           </div>
-        </div>
+        </div> -->
         <!-- 공모전 개최하기, 공모전 참여하기  -->
         <div class="row">
         	<div class="span6">
@@ -366,14 +368,94 @@
 				
               <div class="span12">
                 <div class="aligncenter">
-                  <h3> 선정된 <strong>우수작품</strong></h3>
+                  <h3><p class="text-error">on-air</p></h3>
+                  <h3>진행 중인 <strong>공모전</strong></h3>
+                  <p>현재 공모전이 진행중입니다. 공모요강을 확인해보세요.<br/>
+					공모전 참가작품은 해당 공모전을 개최한 예비건축주만 열람이 가능합니다.</p>
                 </div>
               </div>
             </div>
 
             <div class="row">
+				<div class="grid cs-style-4">            
+            	<ul class="thumbnails" style="margin-left: 0px;">
+				  <li class="span3">
+				    <div class="thumbnail">
+				      <img src="/img/dummies/works/1.jpg" />
+				      <h5><strong>Competition1</strong></h5>
+				      <p>현재 공모전이 진행중입니다. 공모전 참가작품은 해당 공모전을 개최한 예비건축주만 열람이 가능합니다.</p>
+				      <button class="btn btn-info btn-rounded">열람</button>
+				      <button class="btn btn-success btn-rounded">참가</button>
+				    </div>
+				  </li>
+				  <li class="span3">
+				    <div class="thumbnail">
+				      <img src="/img/dummies/works/1.jpg" />
+				       <h5><strong>Competition2</strong></h5>
+				      <p>현재 공모전이 진행중입니다. 공모전 참가작품은 해당 공모전을 개최한 예비건축주만 열람이 가능합니다.</p>
+				      <button class="btn btn-info btn-rounded">열람</button>
+				      <button class="btn btn-success btn-rounded">참가</button>
+				    </div>
+				  </li>
+				  <li class="span3">
+				    <div class="thumbnail">
+				      <img src="/img/dummies/works/1.jpg" />
+				       <h5><strong>Competition3</strong></h5>
+				      <p>현재 공모전이 진행중입니다. 공모전 참가작품은 해당 공모전을 개최한 예비건축주만 열람이 가능합니다.</p>
+				      <button class="btn btn-info btn-rounded">열람</button>
+				      <button class="btn btn-success btn-rounded">참가</button>
+				    </div>
+				  </li>
+				  <li class="span3">
+				    <div class="thumbnail">
+				      <img src="/img/dummies/works/1.jpg" />
+				       <h5><strong>Competition4</strong></h5>
+				      <p>현재 공모전이 진행중입니다. 공모전 참가작품은 해당 공모전을 개최한 예비건축주만 열람이 가능합니다.</p>
+				      <button class="btn btn-info btn-rounded">열람</button>
+				      <button class="btn btn-success btn-rounded">참가</button>
+				    </div>
+				  </li>
+				  <li class="span3">
+				    <div class="thumbnail">
+				      <img src="/img/dummies/works/1.jpg" />
+				       <h5><strong>Competition5</strong></h5>
+				      <p>현재 공모전이 진행중입니다. 공모전 참가작품은 해당 공모전을 개최한 예비건축주만 열람이 가능합니다.</p>
+				      <button class="btn btn-info btn-rounded">열람</button>
+				      <button class="btn btn-success btn-rounded">참가</button>
+				    </div>
+				  </li>
+				  <li class="span3">
+				    <div class="thumbnail">
+				      <img src="/img/dummies/works/1.jpg" />
+				       <h5><strong>Competition6</strong></h5>
+				      <p>현재 공모전이 진행중입니다. 공모전 참가작품은 해당 공모전을 개최한 예비건축주만 열람이 가능합니다.</p>
+				      <button class="btn btn-info btn-rounded">열람</button>
+				      <button class="btn btn-success btn-rounded">참가</button>
+				    </div>
+				  </li>
+				  <li class="span3">
+				    <div class="thumbnail">
+				      <img src="/img/dummies/works/1.jpg" />
+				       <h5><strong>Competition7</strong></h5>
+				      <p>현재 공모전이 진행중입니다. 공모전 참가작품은 해당 공모전을 개최한 예비건축주만 열람이 가능합니다.</p>
+				      <button class="btn btn-info btn-rounded">열람</button>
+				      <button class="btn btn-success btn-rounded">참가</button>
+				    </div>
+				  </li>
+				  <li class="span3">
+				    <div class="thumbnail">
+				      <img src="/img/dummies/works/1.jpg" />
+				       <h5><strong>Competition8</strong></h5>
+				      <p>현재 공모전이 진행중입니다. 공모전 참가작품은 해당 공모전을 개최한 예비건축주만 열람이 가능합니다.</p>
+				      <button class="btn btn-info btn-rounded">열람</button>
+				      <button class="btn btn-success btn-rounded">참가</button>
+				    </div>
+				  </li>
+				</ul>
+				</div>
+            
 
-              <div class="span3">
+             <!--  <div class="span3">
                 <div class="pricing-box-wrap animated-fast flyIn">
                   <div class="pricing-heading">
                     <h3><strong>작품#1</strong></h3>
@@ -464,7 +546,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
           </div>
 		</div>
@@ -588,60 +670,15 @@
 		</div> -->
 
 		<!-- people saying -->
-        <div class="row">
+        <!-- <div class="row">
         	<p align="right"><a href="#" class="btn btn-inverse btn-rounded"><i class="icon-expand-alt icon-white"></i> more</a></p>
           <div class="span12 aligncenter">
-            <h3 class="title">진행 중인 <strong>공모전</strong> </h3>
-            <div class="blankline30"></div>
-            <ul class="bxslider">
-              <li>
-                <blockquote>
-                  Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis
-                  feugiat
-                </blockquote>
-                <div class="testimonial-autor">
-                  <img src="/img/dummies/testimonial/1.png" alt="" />
-                  <h4>Hillary Doe</h4>
-                  <a href="#">www.companyname.com</a>
-                </div>
-              </li>
-              <li>
-                <blockquote>
-                  Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis
-                  feugiat
-                </blockquote>
-                <div class="testimonial-autor">
-                  <img src="/img/dummies/testimonial/2.png" alt="" />
-                  <h4>Michael Doe</h4>
-                  <a href="#">www.companyname.com</a>
-                </div>
-              </li>
-              <li>
-                <blockquote>
-                  Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis
-                  feugiat
-                </blockquote>
-                <div class="testimonial-autor">
-                  <img src="/img/dummies/testimonial/3.png" alt="" />
-                  <h4>Mark Donovan</h4>
-                  <a href="#">www.companyname.com</a>
-                </div>
-              </li>
-              <li>
-                <blockquote>
-                  Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis
-                  feugiat
-                </blockquote>
-                <div class="testimonial-autor">
-                  <img src="/img/dummies/testimonial/4.png" alt="" />
-                  <h4>Marry Doe Elliot</h4>
-                  <a href="#">www.companyname.com</a>
-                </div>
-              </li>
-            </ul>
-
+          	<p><strong>best planning</strong></p>
+            <h3 class="title">우수작 <strong>갤러리</strong> </h3>
+            <p>각 분야별 설계 우수작품을 감상해보세요.</p>
+            
           </div>
-        </div>
+        </div> -->
 
       </div>
     </section>
@@ -651,80 +688,80 @@
       <div class="container">
         <div class="row">
           <div class="span12">
-            <h4 class="title">시공 <strong>사례</strong></h4>
+            <h4 class="title">우수작 <strong>갤러리</strong></h4>
             <div class="row">
-
               <div class="grid cs-style-4">
                 <div class="span3">
-                  <div class="item">
-                    <figure>
-                      <div><img src="/img/dummies/works/1.jpg" alt="" /></div>
-                      <figcaption>
-                        <div>
-                          <span>
-								<a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
-								</span>
-                          <span>
-								<a href="#"><i class="icon-file icon-circled icon-bglight icon-2x"></i></a>
-								</span>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </div>
+                	<div class="outline-frame">
+	                	<!-- <img src="/img/dummies/works/1.jpg" alt="" /> -->
+	                	<div class="outline-box gallery01">
+	                		<h5><strong>전원주택분야</strong></h5>
+	                		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+	                	</div>
+                	</div>
                 </div>
                 <div class="span3">
-                  <div class="item">
-                    <figure>
-                      <div><img src="/img/dummies/works/2.jpg" alt="" /></div>
-                      <figcaption>
-                        <div>
-                          <span>
-								<a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
-								</span>
-                          <span>
-								<a href="#"><i class="icon-file icon-circled icon-bglight icon-2x"></i></a>
-								</span>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </div>
+                	<div class="outline-frame">
+                  		<!-- <img src="/img/dummies/works/2.jpg" alt="" /> -->
+                  		<div class="outline-box gallery02">
+			   		  		<h5><strong>상가인테리어분야</strong></h5>
+	                  		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                  		</div>
+                  	</div>
                 </div>
                 <div class="span3">
-                  <div class="item">
-                    <figure>
-                      <div><img src="/img/dummies/works/3.jpg" alt="" /></div>
-                      <figcaption>
-                        <div>
-                          <span>
-								<a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
-								</span>
-                          <span>
-								<a href="#"><i class="icon-file icon-circled icon-bglight icon-2x"></i></a>
-								</span>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </div>
+                  <div class="outline-frame">
+                  <!-- <img src="/img/dummies/works/3.jpg" alt="" />	 -->
+	                  <div class="outline-box gallery03" >
+						  <h5><strong>공동주택분야</strong></h5>
+						  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+					  </div>
+				  </div>
                 </div>
                 <div class="span3">
-                  <div class="item">
-                    <figure>
-                      <div><img src="/img/dummies/works/4.jpg" alt="" /></div>
-                      <figcaption>
-                        <div>
-                          <span>
-								<a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
-								</span>
-                          <span>
-								<a href="#"><i class="icon-file icon-circled icon-bglight icon-2x"></i></a>
-								</span>
-                        </div>
-                      </figcaption>
-                    </figure>
+                	<div class="outline-frame">
+	                  <!-- <img src="/img/dummies/works/4.jpg" alt="" /> -->
+	                  <div class="outline-box gallery04" >
+		                  <h5><strong>주거인테리어분야</strong></h5>
+		                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+	                  </div>
                   </div>
                 </div>
+                
+                
+                
+                
+                <!-- <ul class="thumbnails">
+				  <li class="span3">
+				    <div class="thumbnail">
+				       <img src="/img/dummies/works/4.jpg" alt="" />
+				       <h5><strong>전원주택분야</strong></h5>
+				       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+				    </div>
+				  </li>
+				  <li class="span3">
+				    <div class="thumbnail">
+				       <img src="/img/dummies/works/4.jpg" alt="" />
+				      <h3>Thumbnail label</h3>
+				      <p>Thumbnail caption...</p>
+				    </div>
+				  </li>
+				  <li class="span3">
+				    <div class="thumbnail">
+				       <img src="/img/dummies/works/4.jpg" alt="" />
+				      <h3>Thumbnail label</h3>
+				      <p>Thumbnail caption...</p>
+				    </div>
+				  </li>
+				  <li class="span3">
+				    <div class="thumbnail">
+				       <img src="/img/dummies/works/4.jpg" alt="" />
+				      <h3>Thumbnail label</h3>
+				      <p>Thumbnail caption...</p>
+				    </div>
+				  </li>
+				</ul> -->
               </div>
-
             </div>
           </div>
         </div>

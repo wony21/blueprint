@@ -18,8 +18,8 @@
   <link href="css/flexslider.css" rel="stylesheet" />
   <link href="css/prettyPhoto.css" rel="stylesheet" />
   <link href="css/camera.css" rel="stylesheet" />
-  <link href="css/jquery.bxslider.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" /> -->
+  <link href="css/jquery.bxslider.css" rel="stylesheet" /> --> 
+  <link href="css/style.css" rel="stylesheet" /> 
   <link href="css/login.css" rel="stylesheet" />
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -60,15 +60,22 @@
 
     <!-- Login Form -->
     <form id="login-form" name="login-form" method="post" action="/loginProcess">
-      <input type="text" id="login" class="fadeIn second" name="id" placeholder="아이디를 입력하세요">
-      <input type="text" id="password" class="fadeIn first" name="password" placeholder="비밀번호를 입력하세요">
+		<input type="text" id="login" class="fadeIn second" name="id" placeholder="아이디를 입력하세요">
+		<input type="password" id="password" class="fadeIn first" name="password" placeholder="비밀번호를 입력하세요">
+		<!-- <div class="form-group">
+			<input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+		</div>
+		<div class="form-group">
+			<input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+		</div> --> 
       <br>
       <input type="submit" class="fadeIn fourth" value="로그인">
     </form>
 
     <div id="formFooter">
       <!-- <a class="underlineHover" href="#"></a> -->
-      <a href="/login/google" >구글 로그인</a>
+      	<a href="/login/google" ><i class="icon-coffee"></i></a>
+      	<a href="/login/google" ><i class="icon-google-plus-sign"></i></a>
     </div>
 
   </div>

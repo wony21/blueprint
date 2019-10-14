@@ -52,16 +52,10 @@ public class HomeController {
 
 	@RequestMapping(value = "/login", method = { RequestMethod.GET, RequestMethod.POST })
 	public String login() {
-		log.info("//////////////////////////////////////// google login22 ////////////////////////////////////////");
+		// 로그인 진입 컨트롤러
 		return "login";
 	}
 	
-//	@RequestMapping(value = "/login/google")
-//	public String loginGoogle() {
-//		log.info("//////////////////////////////////////// google login ////////////////////////////////////////");
-//		return "index";
-//	}
-	 
 	@RequestMapping(value = "/error", method = RequestMethod.GET)
 	public String error(Model model, @RequestParam String error) {
 		model.addAttribute("error", error);

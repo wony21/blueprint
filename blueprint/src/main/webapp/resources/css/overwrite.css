@@ -400,8 +400,9 @@ font-size: 22px;
 
 .btn {
   font-size: 14px;
-
-	font-weight:600;
+  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Serif KR', serif; */
+  font-weight:600;
   text-shadow: none;
   background-image:none;
   border-color: none;
@@ -916,7 +917,7 @@ border-top:none;
 
 .dropdown-menu li  a {
   color: #ddd;
-  font-size:13px;
+  font-size:15px;
   padding:10px 15px 10px 15px;
   margin:0;
   text-shadow:none;
@@ -1394,7 +1395,9 @@ font-weight:600;
           border-radius: 2px;
 }
 
-
+.thumbnail > p, .outline-box > p {
+	font-size : 15px;
+}
 
 
 
