@@ -1,39 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="tf" tagdir="/WEB-INF/tags" %>
 
 <!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Professional bootstrap site template for corporate business</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Your page description here" />
-  <meta name="author" content="" />
-
-  <!-- css -->
-  <link href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans:300,400,600,700,800" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap&subset=korean" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap&subset=korean" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900|Noto+Serif+KR&display=swap&subset=korean" rel="stylesheet">
-  <link href="css/bootstrap.css" rel="stylesheet" />
-  <link href="css/bootstrap-responsive.css" rel="stylesheet" />
-  <link href="css/flexslider.css" rel="stylesheet" />
-  <link href="css/prettyPhoto.css" rel="stylesheet" />
-  <link href="css/camera.css" rel="stylesheet" />
-  <link href="css/jquery.bxslider.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
-
-  <!-- Theme skin -->
-  <link href="color/default.css" rel="stylesheet" />
-
-  <!-- Fav and touch icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
-  <link rel="shortcut icon" href="ico/favicon.png" />
+  <tf:head></tf:head>
   <style type="text/css">
   .madanglogo {
   	position: absolute; 
@@ -47,119 +21,13 @@
   }
   </style>
 
-  <!-- =======================================================
-    Theme Name: Eterna
-    Theme URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
 </head>
 
 <body>
 
   <div id="wrapper">
     <!-- start header -->
-    <header>
-      <div class="top">
-        <div class="container">
-          <div class="row">
-            <div class="span6">
-              <p class="topcontact"><i class="icon-coffee"></i> ${name}(${id})님 환영 합니다.</p>
-            </div>
-            <div class="span6" style="text-align: right;">
-            	<p class="topcontact"><i class="icon-signout"></i><a href="/logout" style="color: #ddd;">Logout</a></p>
-            <!--   <ul class="social-network">
-                <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-white"></i></a></li>
-                <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-white"></i></a></li>
-                <li><a href="#" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-white"></i></a></li>
-                <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-pinterest  icon-white"></i></a></li>
-                <li><a href="/login/google" data-placement="bottom" title="Google +"><i class="icon-google-plus icon-white"></i></a></li>
-                <li><a href="#" data-placement="bottom" title="Dribbble"><i class="icon-dribbble icon-white"></i></a></li>
-              </ul> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row nomargin">
-          <div class="span4">
-            <div class="logo">
-              <div class="madanglogo">
-              	<a href="index.html"><img src="/img/myplan_logo.png" alt="" style="width:215px; height:auto;" /></a>
-              </div>
-            </div>
-          </div>
-          <div class="span8">
-            <div class="navbar navbar-static-top">
-              <div class="navigation">
-                <nav>
-                  <ul class="nav topnav">
-                    <!-- <li class="dropdown active"> -->
-                    <li class="dropdown">
-                      <a href="index.html">About us <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">필요성</a></li>
-                        <li><a href="#">목적</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#">진행 중인 공모전 <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">전체</a></li>
-                        <li><a href="#">인테리어</a></li>
-                        <li><a href="#">전원주택</a></li>
-                        <li><a href="#">상가/빌라</a></li>
-                        <!-- <li class="dropdown"><a href="#">3rd menus<i class="icon-angle-right"></i></a>
-                          <ul class="dropdown-menu sub-menu-level1">
-                            <li><a href="index.html">Sub menu</a></li>
-                            <li><a href="index.html">Sub menu</a></li>
-                          </ul>
-                        </li> -->
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#">우수작 전시회 <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">전체</a></li>
-                        <li><a href="#">인테리어</a></li>
-                        <li><a href="#">전원주택</a></li>
-                        <li><a href="#">상가/빌라</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#">시공사례 <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">전체 사례</a></li>
-                        <li><a href="#">주방공사</a></li>
-                        <li><a href="#">외장공사</a></li>
-                        <li><a href="#">단열/난방공사</a></li>
-                        <li><a href="#">화장실공사</a></li>
-                        <li><a href="#">마루공사</a></li>
-                        <li><a href="#">조명공사</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#">쇼핑몰 <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">건축자재</a></li>
-                        <li><a href="#">조명</a></li>
-                        <li><a href="#">위생도기</a></li>
-                        <li><a href="#">수전</a></li>
-                        <li><a href="#">소품</a></li>
-                      </ul>
-                    </li>
-                    <!-- <li>
-                      <a href="contact.html">Contact </a>
-                    </li> -->
-                  </ul>
-                </nav>
-              </div>
-              <!-- end navigation -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    <tf:header></tf:header>
     <!-- end header -->
 	
     <!-- section featured -->
@@ -704,18 +572,20 @@
                 	<div class="outline-frame">
                   		<!-- <img src="/img/dummies/works/2.jpg" alt="" /> -->
                   		<div class="outline-box gallery02">
+                  		
 			   		  		<h5><strong>상가인테리어분야</strong></h5>
 	                  		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+						
                   		</div>
-                  	</div>
+					</div>
                 </div>
                 <div class="span3">
                   <div class="outline-frame">
                   <!-- <img src="/img/dummies/works/3.jpg" alt="" />	 -->
 	                  <div class="outline-box gallery03" >
-						  <h5><strong>공동주택분야</strong></h5>
-						  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-					  </div>
+	                  	<h5><strong>공동주택분야</strong></h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+	                  </div>
 				  </div>
                 </div>
                 <div class="span3">
@@ -727,40 +597,7 @@
 	                  </div>
                   </div>
                 </div>
-                
-                
-                
-                
-                <!-- <ul class="thumbnails">
-				  <li class="span3">
-				    <div class="thumbnail">
-				       <img src="/img/dummies/works/4.jpg" alt="" />
-				       <h5><strong>전원주택분야</strong></h5>
-				       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-				    </div>
-				  </li>
-				  <li class="span3">
-				    <div class="thumbnail">
-				       <img src="/img/dummies/works/4.jpg" alt="" />
-				      <h3>Thumbnail label</h3>
-				      <p>Thumbnail caption...</p>
-				    </div>
-				  </li>
-				  <li class="span3">
-				    <div class="thumbnail">
-				       <img src="/img/dummies/works/4.jpg" alt="" />
-				      <h3>Thumbnail label</h3>
-				      <p>Thumbnail caption...</p>
-				    </div>
-				  </li>
-				  <li class="span3">
-				    <div class="thumbnail">
-				       <img src="/img/dummies/works/4.jpg" alt="" />
-				      <h3>Thumbnail label</h3>
-				      <p>Thumbnail caption...</p>
-				    </div>
-				  </li>
-				</ul> -->
+               
               </div>
             </div>
           </div>

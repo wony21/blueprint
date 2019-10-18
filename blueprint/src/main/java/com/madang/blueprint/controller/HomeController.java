@@ -20,33 +20,33 @@ public class HomeController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index(Model model) {
+		
+		
 
-		Object userDetails = SessionUtils.getCurrentUser();
-
-		log.info("[USERDETAILS] {}", userDetails.toString());
-
-		if (userDetails instanceof IntegratedUserDetails) {
-
-			IntegratedUserDetails igtUserDetails = (IntegratedUserDetails) userDetails;
-			String userId = "";
-			String userName = "";
-			String userRole = "";
-
-			if (igtUserDetails.getLoginType() == Construct.MADANG) {
-				CmUser user = igtUserDetails.getCmUser();
-				userId = user.getUserId();
-				userName = user.getUserNm();
-				userRole = user.getRole();
-			} else if (igtUserDetails.getLoginType() == Construct.GOOGLE) {
-				GoogleUserDetails user = igtUserDetails.getGoogleUser();
-				userId = user.getEmail();
-				userName = user.getName();
-				userRole = user.getRole();
-			}
-			model.addAttribute("id", userId);
-			model.addAttribute("name", userName);
-			model.addAttribute("role", userRole);
-		}
+//		Object userDetails = SessionUtils.getCurrentUser();
+//		log.info("[USERDETAILS] {}", userDetails.toString());
+//		if (userDetails instanceof IntegratedUserDetails) {
+//
+//			IntegratedUserDetails igtUserDetails = (IntegratedUserDetails) userDetails;
+//			String userId = "";
+//			String userName = "";
+//			String userRole = "";
+//
+//			if (igtUserDetails.getLoginType() == Construct.MADANG) {
+//				CmUser user = igtUserDetails.getCmUser();
+//				userId = user.getUserId();
+//				userName = user.getUserNm();
+//				userRole = user.getRole();
+//			} else if (igtUserDetails.getLoginType() == Construct.GOOGLE) {
+//				GoogleUserDetails user = igtUserDetails.getGoogleUser();
+//				userId = user.getEmail();
+//				userName = user.getName();
+//				userRole = user.getRole();
+//			}
+////			model.addAttribute("id", userId);
+////			model.addAttribute("name", userName);
+////			model.addAttribute("role", userRole);
+//		}
 		return "index";
 	}
 
@@ -55,11 +55,17 @@ public class HomeController {
 		// 로그인 진입 컨트롤러
 		return "login";
 	}
-	
+
 	@RequestMapping(value = "/error", method = RequestMethod.GET)
 	public String error(Model model, @RequestParam String error) {
 		model.addAttribute("error", error);
 		return "error";
+	}
+
+	@RequestMapping(value = "/aboutus", method = RequestMethod.GET)
+	public String aboutus(Model model) {
+		log.info("about us ======================================================================================");
+		return "aboutus/company";
 	}
 
 }

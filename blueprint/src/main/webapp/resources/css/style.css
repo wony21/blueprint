@@ -2784,11 +2784,12 @@ ul.the-icons {
 	margin: 5px 0px 0px 0px;
 	padding: 40px 3px 3px 3px;
 	background-color: #000000;
-	color: #EEEEEE;
+	color: black;
+	position: relative;
 }
 
 .outline-box h5 {
-	color: #EEEEEE;
+	color: black;
 }
 
 .outline-box:hover {
@@ -2799,34 +2800,54 @@ ul.the-icons {
 
 .gallery01 {
 	background-image: url('/img/dummies/works/1.jpg');
-	background-position: center;
-	/* opacity: 0.5 */
+	background-position: top;
+	transition: transform .2s; /* Animation */
+	/* opacity: 0.5; */
+	position: relative;
 }
 
 .back {
-	background-image: url('/img/dummies/works/1.jpg');
+	background-color : black;
 	background-position: center;
-	/* opacity: 0.5 */
+	opacity: 0.5;
+	position: absolute;
+	width:270px;
+	height: 237px;
+	top: 50px;
 }
 
 .gallery02 {
-	background-image: url('/img/dummies/works/2.jpg');
+	background-image: url('/img/dummies/works/6.jpg');
 	background-position: center;
-	/* opacity: 0.5 */
+	transition: transform .2s; /* Animation */
+	/* opacity: 0.5; */
+	position: relative;
 }
 
 .gallery03 {
-	background-image: url('/img/dummies/works/6.jpg');
-	background-position: center;
-	background-color: blue;
-	opacity: 0.5
+	background-image: url('/img/dummies/works/14.jpg');
+	background-position: top;
+	transition: transform .2s; /* Animation */
+	/* opacity: 0.5; */
+	position: relative;
 }
 
 .gallery04 {
+	overflow: hidden;
 	background-image: url('/img/dummies/works/7.jpg');
 	background-position: center;
+	transition: transform .2s; /* Animation */
 	/* opacity: 0.5 */
+	position: relative;
 }
 
+.gallery01:hover, .gallery02:hover, .gallery03:hover, .gallery04:hover {
+	transform: scale(1.1);
+}
+
+.bg01 {
+	background-image: url('/img/dummies/works/14.jpg');
+	background-position: center;
+}
 
 /* Theme Styler :: End */
